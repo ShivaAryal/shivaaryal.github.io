@@ -1,18 +1,408 @@
-<html>
- <head> 
-  <meta charset="UTF-8" /> 
-  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) --> 
-  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script> 
-  <!-- uncomment lines below to include extra p5 libraries --> 
-  <script language="javascript" src="libraries/p5.dom.js"></script> 
-  <!--<script language="javascript" src="libraries/p5.sound.js"></script>--> 
-  <script language="javascript" type="text/javascript" src="sketch_170307b.js"></script> 
-  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN --> 
-  <!-- this line removes any default padding and style. you might only need one of these values set. --> 
-  <style> body {padding: 0; margin: 0;} </style> 
-  <script language="javascript" type="text/javascript" src="capturing.js"></script>  
-  <script language="javascript" type="text/javascript" src="p5js-temp-capturing1457065486264666777.js" class=" temp"></script>
- </head> 
- <body>   
- </body>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shiva Aryal Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#accomplishments">Accomplishments</a>
+            </li>
+            <li>
+                <a href="#skills">Interests</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Shiva Aryal</h1>
+            <h2>Software Engineer</h2>
+            <a href="images/myresume.pdf" download="shivaaryalresume.pdf" target="_blank" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Highly ambitious and self motivated software developer with hands on experience in web and mobile app development, AI enthusiast and technology lover.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="June 2020 – Present">
+                <h3>Siris Technology – Centreville, VA, USA</h3>
+                <h4>Remote Software Engineer</h4>
+                <p>
+                    •	Developed various backend projects and deployed them to various platform including heroku and AWS platforms. (nodejs, graphql, mongodb, docker, AWS-ECS, AWS-S3)
+                    <br/>
+                    •	Implemented CI/CD, unit and integration testing in existing company projects(Github action, jest)
+                    <br/>
+                    •	Converted designed wireframes to well-documented fully functioning cross platform mobile apps. (react native, Apollo client)
+
+                </p>
+            </div>
+
+            <div data-date="September 2019 – August 2020">
+                <h3>Freelance</h3>
+                <h4>Software Engineer</h4>
+                <p>
+                    •	Contributed on full stack development ranging from designing data models, creating and consuming large scale APIs, implementing responsive frontend and cross platform mobile designs, launching mobile app to playstore.
+                    <br/>
+                    •	Integrated video conferencing service capable of hosting 10+ users in a Mobile app using twillio api service
+                    <br/>
+                    •	Developed multi user, user to user chat system feature using firebase real-time messaging
+                    <br/>
+                    •	Implemented secured and reliable payment system with international payment api - Stripe on the existing app
+                </p>
+            </div>
+
+            <div data-date="September 2018 – July 2019">
+                <h3>Thegana Services</h3>
+                <h4>Mid Level Full Stack Mobile Developer</h4>
+                <p>
+                    •	Assimilated geospatial data structures, Google maps and OSM APIs and integrated them in existing projects for new addressing system in Nepal
+                    <br/>
+                    •	Configured multiple firebase services and integrated them in backend applications 
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+
+        <div class="education-block">
+            <h3>IOE Thapathali Campus – Maitighar, Kathmandu, Nepal </h3>
+            <span class="education-date">2014 - 2018</span>
+            <h4>Bachelor in Engineering: Electronics and Communication Engineering</h4>
+            <ul>
+                <li>
+                    As an Electronics and Communication engineer, I have learned the core of programming, data structures, algorithms
+                    and their implementation, basic hardware and their use in robotics technology with Arduino, AtMega32, 8051, 8085,
+                    8086 processors using various programming languages. During my study, I created many projects related to my field
+                    in programming languages like C, C++, python, javascript, nodejs, reactjs and react native.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/iot.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>IOT Based Home Automation using Android Application</h3>
+                        <p>
+                            •	Using arduino, wifi module (ESP8266), nodejs, expressjs, mongodb, me, along with my teammates, made home automation app successfully controlling home appliances.                        
+                        </p>
+                        <a href="https://github.com/ShivaAryal/Automation" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ocr.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Nepali Character Recognition</h3>
+                        <p>
+                            •	We, with my teammates made a python desktop app that recognized Nepali words i.e. translating written characters into text format and the words were written through a mouse gesture based pen on any surface. We used convolutional neural network and back propagation for training the model, and Python Image Library (PIL) and cv2 for image manipulation and segmentation. We also used M16175-h mouse sensor for mouse based gesture capturing.                        
+                        </p>
+                        <a href="https://github.com/ShivaAryal/NepaliCharacterRecognition" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/robotics.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Shortest Path Detecting Automatic Robot</h3>
+                        <p>
+                            •	I along with my team members made shortest path detecting automatic robot and participated in International Robotics Competition (IRC) 2018, IIT Bombay using technologies like arduino, pycam and Dijkstra algorithm.
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/robotics.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Solar Panel Cleaning Automatic Robot</h3>
+                        <p>
+                            •	I along with my team members made a solar panel cleaning automatic robot using arduino and various color sensors, and participated in IOE Robocon 2018.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/thegana.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Thegana Cross Platform Mobile App</h3>
+                        <p>
+                            •	I, working in Thegana Services, made Thegana app for both ios and android OS using react native. 
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.thegana" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/fitsii.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Fitsii</h3>
+                        <p>
+                            •	I, working as a remote web developer developed a fitness booking software using react, react native and nodejs.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.fitsii" target="_blank">View Project</a>
+                        <a href="https://fitsii.com/" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/nepaltoday.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>NepalToday</h3>
+                        <p>
+                            •	A Nepali news app with many other features like radio, corona information and all national trending things.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.siristechnology.nepaltodayapp" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/bollywood.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Bollywood Hungama App</h3>
+                        <p>
+                            •	A bollywood news app showing latest and trending things in bollywood industry.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.siristechnology.bollywoodhungama" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/podcast.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>NepalToday Podcast App</h3>
+                        <p>
+                            •	App showing latest trending Nepali audio podcasts.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.siristechnology.nepaltodaypodcast" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="accomplishments" style="text-align: center;">
+        <h2 class="heading">Accomplishments</h2>
+
+        <div class="education-block">
+            <h3>IOE Robocon 2018 winner </h3>
+            <span class="education-date"></span>
+            <h4></h4>
+            <ul>
+                <li>
+                    Me along with my team won IOE Robocon 2018 organized by Ujjyalo Nepal, IOE Pulchowk and Nepal army at Nepal Army Barrack, Satdobato, Nepal. We made solar panel cleaning robot that included firstly manual robot carrying automatic robot traversing through all the obstacles, then leaving automatic robot on a hill like area removing blocks and moving through its path and later cleaning dusts on solar panel automatically.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="skills" style="background-color: #f2f2f5; text-align: center;">
+        <h2 class="heading">Interests</h2>
+        <ul>
+            <li>Artificial Intelligence</li>
+            <li>Robotics and Automation</li>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Graphql</li>
+            <li>React Native</li>
+            <li>Apollo</li>
+            <li>AI</li>
+            <li>Deep Learning</li>
+            <li>Express</li>
+            <li>Nextjs</li>
+            <li>MySql</li>
+            <li>PostgreSql</li>
+            <li>Mongodb</li>
+            <li>Arduino</li>
+            <li>AVR</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="mailto:https://shivaaryalj7@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2020 Shiva Aryal
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ShivaAryal" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/shiva-aryal-518717155/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/shiva.aryal.507/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
 </html>
